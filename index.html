@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operatin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data/icon.png">
+</head>
+
+<body>
+    <Center id="body">
+        <h1 id="title">ادخل المعاملات</h1>
+        <div id="inputfield">
+            <button id="finish" onclick="location.reload()">اخلاء</button>
+            <input type="number" id="quantity" placeholder="الكمية">
+            <select id="quality">
+            <option value=200>200 جنيه</option>
+            <option value=100>100 جنيه</option>
+            <option value=50>50 جنيه</option>
+            <option value=20>20 جنيه</option>
+            <option value=10>10 جنيه</option>
+            <option value=5>5 جنيه</option>
+            </select>
+            <button id="finish" onclick="Calc()">احسب</button>
+            <hr>
+            <p>الناتج:</p>
+            <h2 id="sum">مجموع : </h2>
+            <p>جنيه</p>
+            <hr>
+            <p>النهائي:</p>
+            
+            <h2 id="result"></h2>
+            <p>جنيه</p>
+            
+            <div id="history1">
+                <h2>تاريخ العمليات:</h2>
+                <h2>قيمة الورقة * عدد الاوراق = الناتج</h2>
+                <div id="history">  </div>
+            </div>
+        </div>
+    </Center>
+    <script src="page.js"></script>
+</body>
+
+</html>
